@@ -14,8 +14,10 @@ public class IntegerArrayUtilities {
         ArrayList<Integer> arr = new ArrayList<>();
         for (int i = start; i <= stop; i++) {
             arr.add(i);
+
         }
-        return null;
+        Integer[] result = arr.toArray(new Integer[arr.size()]);
+        return result;
     }
 
     public Integer getSumOfFirstTwo(Integer[] array) {
