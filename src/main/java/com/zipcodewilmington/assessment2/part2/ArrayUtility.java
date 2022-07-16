@@ -1,6 +1,7 @@
 package com.zipcodewilmington.assessment2.part2;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 public class ArrayUtility {
     public Integer[] merge(Integer[] array1, Integer[] array2) {
@@ -37,6 +38,14 @@ public class ArrayUtility {
     }
 
     public Integer mostCommon(Integer[] array) {
-        return null;
+      int count = 0;
+      int value = 0;
+      for (int i = 0; i < array.length; i++) {
+         if (countOccurrence(array, array, array[i]) > count) {
+             count = countOccurrence(array, array, array[i]);
+             value = array[i];
+         }
+      }
+        return value;
     }
 }
