@@ -21,10 +21,10 @@ public class IntegerArrayUtilities {
     }
 
     public Integer getSumOfFirstTwo(Integer[] array) {
-        return null;
+        return array[0] + array[1];
     }
 
     public Integer getProductOfFirstTwo(Integer[] array) {
-        return null;
+        return array[array.length -1] * array[array.length -2];
     }
 }
