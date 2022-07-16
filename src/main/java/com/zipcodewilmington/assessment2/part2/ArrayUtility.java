@@ -25,7 +25,15 @@ public class ArrayUtility {
     }
 
     public Integer countOccurrence(Integer[] array1, Integer[] array2, Integer valueToEvaluate) {
-        return null;
+       Integer[] count = merge(array1, array2);
+       int counter = 0;
+       for (int i = 0; i < count.length; i++) {
+           if (count[i] == valueToEvaluate) {
+               counter++;
+           }
+
+       }
+        return counter;
     }
 
     public Integer mostCommon(Integer[] array) {
