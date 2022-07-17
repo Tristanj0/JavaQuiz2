@@ -10,6 +10,7 @@ public class Router {
 
 
     public void add(String path, String controller) {
+
        this.map.put(path, controller);
     }
 
@@ -18,12 +19,16 @@ public class Router {
     }
 
     public String getController(String path) {
-        return null;
+
+        return map.get(path);
     }
 
     public void update(String path, String studentController) {
+        add(path, studentController);
     }
 
     public void remove(String path) {
+
+        this.map.remove(path);
     }
 }
